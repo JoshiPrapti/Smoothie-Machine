@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Link to the CSS file -->
+</head>
+<body>
+    <h1>Order Your Smoothie</h1>
+    <form id="smoothie-form">
+        <!-- Dropdown for selecting smoothie size -->
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br>
+
+        <!-- Dropdown for selecting base liquid -->
+        <label for="base">Base Liquid:</label>
+        <select id="base" name="base" required>
+            <option value="water">Water</option>
+            <option value="milk">Milk</option>
+            <option value="juice">Juice</option>
+        </select><br>
+
+        <!-- Checkboxes for selecting fruits -->
+        <label for="fruits">Fruits:</label><br>
+        <input type="checkbox" id="banana" name="fruits" value="Banana"> Banana<br>
+        <input type="checkbox" id="strawberry" name="fruits" value="Strawberry"> Strawberry<br>
+        <input type="checkbox" id="blueberry" name="fruits" value="Blueberry"> Blueberry<br>
+        
+        <!-- Checkboxes for selecting add-ons -->
+        <label for="add-ons">Add-ons:</label><br>
+        <input type="checkbox" id="protein" name="addons" value="Protein"> Protein<br>
+        <input type="checkbox" id="flaxseed" name="addons" value="Flaxseed"> Flaxseed<br>
+        <input type="checkbox" id="honey" name="addons" value="Honey"> Honey<br>
+
+        <!-- Button to submit the order -->
+        <button type="button" id="order-btn">Order</button>
+    </form>
+    <!-- Div to display the order summary -->
+    <div id="order-summary"></div>
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
